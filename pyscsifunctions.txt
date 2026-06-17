@@ -1,0 +1,27 @@
+inquiry() -> query device identity, type, product info
+testunitready() -> check whether the device is ready
+reportluns() -> list logical units
+reportpriority() -> report port/priority info
+read10() -> read blocks 10
+read12() -> read blocks 12
+read16() -> read blocks 16
+write10() -> write blocks 10
+write12() -> write blocks 12
+write16() -> write blocks 16
+writesame10() -> write single block pattern repeatedly across a range
+writesame16() -> write single block pattern repeatedly across a range
+readcapacity10() -> get device capacity
+readcapacity16() -> get device capacity
+blocksize() -> get/work with the logical block size
+getlbastatus() -> query the provisioning/mapping status of LBA
+modesense6() -> read mode pages
+modesense10()
+modeselect6() -> set mode pages
+preventallowmediumremoval() -> lock/unlock media ejection
+readelementstatus() -> query slots, drives, and transport elements
+movemedium() -> move or swap media between elements
+exchangemedium() -> mvoe or swap media between elements
+positiontoelement() -> position the transport
+opencloseimportexportelement() -> operate the import/export element
+initializeelementstatus() -> inventory the changer
+initializeelementstatuswithrange() -> inventory the changer
