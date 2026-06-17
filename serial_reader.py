@@ -4,10 +4,14 @@ import pyscsi
 
 printSettings=True
 myDevice=serial.Serial(port='COM3')
+myDevice.close
 #myDevice=SCSIDevice.init(self,"COM3")   ,9600,8,1,None,False,False,False,None,False,None,None
 #myDevice.perform_inquiry('COM3')
+#myDevice.open('COM3')
 if myDevice.is_open:
-    print("device open\n")
+    print("device open with this many bits waiting\n")
+    print(myDevice.in_waiting)
+    print("\n")
 else:
     print("device not open\n")
 mySettings=myDevice.get_settings
